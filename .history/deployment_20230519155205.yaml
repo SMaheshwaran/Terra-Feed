@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: terrafeed
+  name: codeless
 spec:
   replicas: 5
   selector:
     matchLabels:
-      app: terrafeed
+      app: codeless
   template:
     metadata:
       labels:
-        app: terrafeed
+        app: codeless
     spec:
       containers:
-      - name: terrafeed
-        image: us.icr.io/maheshsub/myrepo
+      - name: codeless
+        image: us.icr.io/nagi/myrepo
         imagePullPolicy: Always
         ports:
         - containerPort: 8000
