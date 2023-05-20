@@ -15,7 +15,7 @@ import os
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(_file_).resolve().parent.parent
 TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
 STATIC_DIR=os.path.join(BASE_DIR,'static')
 
@@ -144,4 +144,4 @@ EMAIL_HOST_PASSWORD = 'Maruti800' # host email password required
 # https://myaccount.google.com/lesssecureapps
 # otherwise you will get SMTPAuthenticationError at /contactus
 # this process is required because google blocks apps authentication by default
-EMAIL_RECEIVING_USER = ['justfortestingweb1@gmail.com'] # email on which you will receive messages sent from website
+EMAIL_RECEIVING_USER = ['justfortestingweb1@gmail.com'] # email on which you will receive messages sent from website

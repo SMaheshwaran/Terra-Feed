@@ -144,4 +144,4 @@ EMAIL_HOST_PASSWORD = 'Maruti800' # host email password required
 # https://myaccount.google.com/lesssecureapps
 # otherwise you will get SMTPAuthenticationError at /contactus
 # this process is required because google blocks apps authentication by default
-EMAIL_RECEIVING_USER = ['justfortestingweb1@gmail.com'] # email on which you will receive messages sent from website
+EMAIL_RECEIVING_USER = ['justfortestingweb1@gmail.com'] # email on which you will receive messages sent from website

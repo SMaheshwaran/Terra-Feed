@@ -18,12 +18,14 @@ from django.contrib import admin
 from django.urls import path
 from food import views
 from django.contrib.auth.views import LoginView,LogoutView
+from django.contrib.redirects.models import Redirect 
 
 admin.site.site_header = "Zero Food Admin"
 admin.site.site_title = "Zero Food Admin Portal"
 admin.site.index_title = "Welcome to Zero Food Researcher Portal"
 
 urlpatterns = [
+    path ('/', views.index ),
     path('admin/', admin.site.urls),
     path('home',views.home_view,name='home'),
 
